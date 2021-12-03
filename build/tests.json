@@ -1,0 +1,15 @@
+{
+  "contracts": {
+    "Lottery": "08eedd3693b089e97b4f8ee403c059ac3e3a0cb3"
+  },
+  "tests": {
+    "tests/test_lottery.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "35a4ac2cbf367174d41df1c4c50840ece5a911ae",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
