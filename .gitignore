@@ -145,3 +145,4 @@ dmypy.json
 cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+build/contracts/dependencies/smartcontractkit/chainlink-brownie-contracts@0.2.2/AggregatorV3Interface.json
