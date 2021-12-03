@@ -41,7 +41,7 @@ def get_contract(contract_name):
             deploy_mocks()
         contract = contract_type[-1]
     else:
-        contract_address = config['networks'][newtork.show_active(
+        contract_address = config['networks'][network.show_active(
         )][contract_name]
         contract = Contract.from_abi(
             contract_type._name, contract_address, contract_type.abi)
@@ -57,4 +57,6 @@ def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
     account = get_account()
     MockV3Aggregator.deploy(
         decimals, initial_value, {"from": account})
+    link_token = LinkToken.deploy({"from": account})
+    VRFCoordinatorMock.deploy(link_token.address, {"from": account})
     print('Deployed!')
