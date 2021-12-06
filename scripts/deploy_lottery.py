@@ -14,6 +14,7 @@ def deploy_lottery():
                              {"from": account},
                              publish_source=config["networks"][network.show_active()].get("verify"))
     print("Deployed lottery!")
+    return lottery
 
 
 def start_lottery():
